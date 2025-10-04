@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Coverflow</title>
+	  <link rel="icon" href="./src/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+    <div id="home">
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <img src="./src/logo-2.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top logo">
+                <h3 class="d-inline-block align-text-top logo-text">3D Coverflow</h3>
+            </a>
+            <ul class="navbar-nav">
+                <li class=><a href="#home" class="nav-link">Home</a></li>
+                <li class=><a href="#about" class="nav-link">About</a></li>
+                <li class=><a href="#contact" class="nav-link">Contact</a></li>
+				<li><button id="invert-btn" class="nav-link">Theme</button></li>
+          <script>
+            document.getElementById("invert-btn").onclick = () =>
+            document.documentElement.classList.toggle("inverted");
+          </script>
+              <style>
+                html {
+                        transition: filter 1s ease-in-out; /* 💤 Smooth and lazy fade */
+                  }
+
+                  .inverted {
+                              filter: invert(1) hue-rotate(180deg);
+                            }
+
+                          .inverted img,
+                          .inverted video,
+                          .inverted picture,
+                          .inverted svg {
+                            filter: invert(1) hue-rotate(180deg);
+                            transition: filter 1.5s ease-in-out; /* Matches the lazy fade */
+                            }
+              </style>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    </header>
+
+    <main id="home">
+        <h1 class="home-header">Discover Nature</h1>
+        <div class="carousel-container">          
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./src/cascading-waterfall.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h4>Waterfall</h4>
+        <p>Cascading water through lush green forest</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./src/forest-path.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h4>Forest Path</h4>
+        <p>A winding trail through ancient woodland</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./src/mountain-landscape.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h4>Mountain Landscape</h4>
+        <p>Majestic peaks covered in snow during golden hour</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./src/ocean-sunset-golden-hour.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h4>Ocean Sunset</h4>
+        <p>Golden hour over endless ocean waves</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./src/rolling-sand-dunes.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h4>Desert Dunes</h4>
+        <p>Rolling sand dunes under vast blue skies</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./src/serene-water-mirroring.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h4>Waterfall</h4>
+        <p>Cascading water through lush green forest</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./src/starry-night.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h4>Starry Night</h4>
+        <p>Countless stars illuminating the dark sky</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+    </main>
+    <section id="about">
+        <div class="about-header">
+                <h2 style="font-size: 48px; color: #764ba2 !important;">Discover 3D Coverflow</h2>
+                <p style="font-size: 20px;">A revolutionary way to showcase your visual content with stunning 3D effects and seamless interactions</p>
+        </div>
+        <div class="about-main">
+            <div class="about-card">
+              <div class="about-card-top"></div>
+                <img src="./src/logo-2.png" alt="" class="about-card-img">
+                <h2>3D Coverflow</h2>
+                <p style="font-size: 17px;">Transform your image galleries into immersive 3D experiences</p>
+                <div class="about-card-bottom"></div>
+            </div>
+            <div class="about-text">
+                <h2>Elevate Your Gallery Experience</h2>
+                <p>3D Coverflow is brought to you by TemplateMo. Transform the way you present images with our cutting-edge 3D coverflow technology. 
+                Create immersive, interactive galleries that captivate your audience and leave a lasting impression.</p>
+                <p>Whether you're showcasing portfolio pieces, product images, or creating an interactive story, 
+                our 3D coverflow brings your content to life with fluid animations and intuitive controls.</p>
+                <ul class="about-list">
+                    <li>Smooth 3D transitions with hardware acceleration</li>
+                    <li>Touch-enabled navigation for mobile devices</li>
+                    <li>Customizable autoplay and timing controls</li>
+                    <li>Keyboard navigation support</li>
+                    <li>Reflection effects for added depth</li>
+                </ul>
+                <a href="#contact" class="about-button">Start Your Project</a>
+            </div>
+        </div>
+        <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-number">60fps</div>
+                    <div class="stat-label">Smooth Performance</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Responsive Design</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3D</div>
+                    <div class="stat-label">Visual Effects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Customization</div>
+                </div>
+            </div>
+            <br>
+    </section>
+
+    <section id="contact">
+      <div class="contact-header">
+        <h2 style="font-size: 48px;color: #764ba2 !important;">Get In Touch</h2>
+        <p style="font-size: 20px;">Have a project in mind? Let's create something amazing together.</p>
+      </div>
+      <div class="contact-parent">
+        <div class="contact-info">
+          <div class="contact-info-placement">
+          <h2>Let's Connect</h2>
+          <br>
+          <p>We're here to help bring your vision to life. Whether you need a stunning gallery,
+             a complete website redesign,
+              or custom development work,
+             we'd love to hear from you.
+            </div>
+             <div class="contact-info-cards">
+              <p><span class="icon-border"><i class="fa-solid fa-envelope"></i></span>Email: hello@3dcoverflow.com</p>
+             </div>
+             <div class="contact-info-cards">
+              <p><span class="icon-border"><i class="fa-solid fa-phone"></i></span>Phone: +1 (555) 123-4567</p>
+             </div>
+             <div class="contact-info-cards">
+              <p><span class="icon-border"><i class="fa-solid fa-location-pin"></i></span>Address: 123 Design Street, San Francisco, CA 94102</p>
+             </div>
+             <div class="contact-info-cards">
+              <p><span class="icon-border"><i class="fa-solid fa-user"></i></span>Business Hours: Monday - Friday: 9:00 AM - 6:00 PM PST</p>
+             </div>
+          </p>
+        </div>
+        <div class="contact-form">
+          <form action="" class="contact-form-placement">
+            <label for="name" style="margin-left: 30px;">Your Name</label>
+            <br>
+            <input type="text" class="contact-info-form">
+            <br>
+            <label for="email" style="margin-left: 30px;">Email Address</label>
+            <br>
+            <input type="text" class="contact-info-form">
+            <br>
+            <label for="subject" style="margin-left: 30px;">Subject</label>
+            <br>
+            <input type="text" class="contact-info-form">
+            <br>
+            <label for="message" style="margin-left: 30px;">Message</label>
+            <br>
+            <textarea name="message" class="contact-info-form-txtarea"></textarea>
+            <br>
+            <button class="about-button" style="border: 0px !important;">Send Message</button>
+          </form>
+
+        </div>
+      </div>
+
+    </section>
+  <footer class="footer">
+            <p style="margin:auto 30px;">Copyright © 2025 Your Company | Design: Azalor</p>
+            <ul style="margin-right: 100px;">
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
+            </ul>
+  </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>

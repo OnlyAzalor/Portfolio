@@ -1,0 +1,19 @@
+
+const display = document.getElementById('display-screen');
+
+function addtoscreen(input) {
+    display.value += input;
+}
+
+function calculate() {
+    try {
+    display.value = eval(display.value);
+    } catch (error) {
+        display.value = 'Error!';
+    }
+
+}
+
+function clearScreen() {
+    display.value = '';
+}

@@ -1,0 +1,132 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    /* Casino background */
+    background: url("../src/bg.png") no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: brightness(0.9);
+}
+
+/* Game Title */
+h1 {
+    color: #f7f7f7; /* White neon */
+    margin-bottom: 15px;
+    font-size: 2.6em;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 15px #00eaff,
+        0 0 25px #00eaff;
+}
+
+/* Game Box */
+.game-box {
+    background: rgba(0, 0, 0, 0.7); /* Dark glassy effect */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow:
+        0 0 15px rgba(0, 255, 255, 0.4),
+        0 0 25px rgba(0, 255, 255, 0.3);
+    text-align: center;
+    width: 320px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Lucky Number Display */
+#number {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #00ffaa; /* Emerald green glow */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+    text-shadow:
+        0 0 5px #00ffaa,
+        0 0 10px #00ffaa,
+        0 0 15px #00ffcc;
+}
+
+/* Result Message */
+#result {
+    font-size: 1.3em;
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 35px;
+    color: #fff;
+    text-shadow:
+        0 0 3px #000,
+        0 0 8px rgba(0, 255, 255, 0.6);
+}
+
+/* Buttons */
+button {
+    padding: 14px 30px;
+    font-size: 1.3em;
+    color: #fff;
+    background: linear-gradient(135deg, #ff9f1c, #ff6b00); /* Gold-to-orange gradient */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow:
+        0 0 10px #ff9f1c,
+        0 0 20px #ff6b00;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ffb84d, #ff7f24);
+    box-shadow:
+        0 0 15px #ffb84d,
+        0 0 25px #ff7f24;
+}
+
+button:disabled {
+    background: #444;
+    color: #aaa;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Win / Lose States */
+.win {
+    color: #00ffaa;
+    animation: pop 0.3s ease-in-out;
+    text-shadow:
+        0 0 5px #00ffaa,
+        0 0 15px #00ffcc,
+        0 0 25px #00ffcc;
+}
+
+.lose {
+    color: #ff4e4e;
+    animation: shake 0.3s ease-in-out;
+    text-shadow:
+        0 0 5px #ff4e4e,
+        0 0 15px #ff6b6b,
+        0 0 25px #ff8c8c;
+}
+
+/* Pop Animation for Winning */
+@keyframes pop {
+    0% { transform: scale(0.8); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Shake Animation for Losing */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    50% { transform: translateX(6px); }
+    75% { transform: translateX(-6px); }
+    100% { transform: translateX(0); }
+}

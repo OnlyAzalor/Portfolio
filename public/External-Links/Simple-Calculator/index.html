@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="display">
+        <input type="text" class="screen" readonly id="display-screen">
+    </div>
+  <div class="ac"><button class="allclear" onclick="clearScreen()">AC</button></div>
+  <div class="modlus"><button class="cal-keys" onclick="addtoscreen('%')">%</button></div>
+  <div class="num7"><button class="cal-keys" onclick="addtoscreen('7')">7</button></div>
+  <div class="num8"><button class="cal-keys" onclick="addtoscreen('8')">8</button></div>
+  <div class="num9"><button class="cal-keys" onclick="addtoscreen('9')">9</button></div>
+  <div class="num4"><button class="cal-keys" onclick="addtoscreen('4')">4</button></div>
+  <div class="num5"><button class="cal-keys" onclick="addtoscreen('5')">5</button></div>
+  <div class="num6"><button class="cal-keys" onclick="addtoscreen('6')">6</button></div>
+  <div class="num1"><button class="cal-keys" onclick="addtoscreen('1')">1</button></div>
+  <div class="num2"><button class="cal-keys" onclick="addtoscreen('2')">2</button></div>
+  <div class="num3"><button class="cal-keys" onclick="addtoscreen('3')">3</button></div>
+  <div class="num0"><button class="cal-keys" onclick="addtoscreen('0')">0</button></div>
+  <div class="point"><button class="cal-keys" onclick="addtoscreen('.')">.</button></div>
+  <div class="divd"><button class="cal-keys" onclick="addtoscreen('/')">&divide;</button></div>
+  <div class="multi"><button class="cal-keys" onclick="addtoscreen('*')">&times;</button></div>
+  <div class="add"><button class="cal-keys" onclick="addtoscreen('+')">+</button></div>
+  <div class="sub"><button class="cal-keys" onclick="addtoscreen('-')">-</button></div>
+  <div class="equal"><button class="cal-keys" onclick="calculate()">=</button></div>
+</div>
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>
