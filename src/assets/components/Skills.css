@@ -44,3 +44,23 @@
   transform: scale(1.2);
   cursor: pointer;
 }
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+
+}  #skills {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .skills-list li, .skills-list2 li {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 10px;
+  }
