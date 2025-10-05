@@ -2,42 +2,43 @@
 /* 🎯 Base (Desktop) Styles */
 /* ======================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f2f2f2;
+}
 
 /* Main container */
 .container {
-    position: relative;
-    width: 440px;
-    height: 640px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    padding: 20px;
+  position: relative;
+  width: 440px;
+  height: 640px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 20px;
 
-    display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "display display display display"
-        "ac ac modlus divd"
-        "num7 num8 num9 multi"
-        "num4 num5 num6 sub"
-        "num1 num2 num3 add"
-        "num0 num0 point equal";
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  grid-auto-flow: row;
+  grid-template-areas:
+      "display display display display"
+      "ac ac modlus divd"
+      "num7 num8 num9 multi"
+      "num4 num5 num6 sub"
+      "num1 num2 num3 add"
+      "num0 num0 point equal";
 }
 
 /* Grid areas */
@@ -63,106 +64,104 @@ body {
 
 /* Display */
 .screen {
-    width: 100%;
-    height: 100%;
-    background: #6868686e;
-    color: #fff;
-    font-size: 3rem;
-    text-align: right;
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
-    border: #000 solid 2px;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background: #6868686e;
+  color: #fff;
+  font-size: 3rem;
+  text-align: right;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  border: #000 solid 2px;
+  border-radius: 10px;
 }
 
 /* Buttons */
 .allclear {
-    background: #f44336;
-    color: #fff;
-    font-size: 2rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
+  background: #f44336;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 
 .cal-keys {
-    background: #e0e0e0;
-    color: #000;
-    font-size: 2rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
+  background: #e0e0e0;
+  color: #000;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 
 .cal-keys:active, .allclear:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .allclear:hover {
-    background: #961a1a;
+  background: #961a1a;
 }
 
 .cal-keys:hover {
-    background: #bdbdbd;
+  background: #bdbdbd;
 }
 
 /* =============================== */
 /* 📱 Mobile Responsive (<=768px)  */
 /* =============================== */
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
-        background: #eaeaea;
-    }
+  body {
+    padding: 10px;
+    background: #eaeaea;
+  }
 
-    .container {
-        width: 100%;
-        max-width: 360px;
-        height: auto;
-        padding: 15px;
-        border-radius: 12px;
+  .container {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    padding: 15px;
+    border-radius: 12px;
 
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 80px);
-        gap: 5px;
-    }
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 80px);
+    gap: 5px;
+  }
 
-    .screen {
-        font-size: 2.2rem;
-        padding: 15px;
-    }
+  .screen {
+    font-size: 2.2rem;
+    padding: 15px;
+  }
 
-    .allclear, .cal-keys {
-        font-size: 1.6rem;
-        border-radius: 8px;
-    }
+  .allclear, .cal-keys {
+    font-size: 1.6rem;
+    border-radius: 8px;
+  }
 
-    /* Keep bottom spacing neat */
-    html, body {
-        overflow-x: hidden;
-    }
+  html, body {
+    overflow-x: hidden;
+  }
 }
 
 /* 📱 Extra Small Phones (<=480px) */
 @media (max-width: 480px) {
-    .container {
-        max-width: 320px;
-        grid-template-rows: repeat(6, 70px);
-    }
+  .container {
+    max-width: 320px;
+    grid-template-rows: repeat(6, 70px);
+  }
 
-    .screen {
-        font-size: 1.8rem;
-        padding: 10px;
-    }
+  .screen {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
 
-    .allclear, .cal-keys {
-        font-size: 1.4rem;
-    }
-}
+  .allclear, .cal-keys {
+    font-size: 1.4rem;
+  }
 }
