@@ -4,7 +4,7 @@
     font-size: 5rem;
     text-align: center;
     position: relative;
-    top: 10rem;
+    top: 20rem;
     font-weight: 700;
     letter-spacing: 2px;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
@@ -21,7 +21,7 @@
     font-size: 1.5rem;
     text-align: center;
     position: relative;
-    top: 12rem;
+    top: 22rem;
     font-weight: 500;
     letter-spacing: 1px;
     color: var(--primary);
@@ -75,6 +75,21 @@
 
 }
 
+@media (max-width: 768px) {
+
+
+.hero-header {
+
+    top: 10rem;
+}
+
+
+  .hero-dis {
+    top: 12rem;
+
+}
+
+}
 
 
 
