@@ -42,3 +42,49 @@ a:hover {
     font-size: 24px;
     font-weight: 900;
 }
+
+/* --- Menu button hidden by default --- */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* --- Responsive adjustments --- */
+
+
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 15px 30px; 
+  }
+
+  #res-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 255, 255, 0.2);
+  }
+
+  #res-nav.active {
+    display: flex;
+  }
+
+  li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
