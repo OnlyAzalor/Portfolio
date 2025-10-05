@@ -1,11 +1,19 @@
-*{
+/* ========================= */
+/* 🌐 Base (Desktop) Styles */
+/* ========================= */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
+body {
+    background: #f9f9f9;
+    overflow-x: hidden;
+}
 
+/* ---------- Header ---------- */
 .top-bg {
     position: relative;
     width: 100%;
@@ -23,28 +31,25 @@
     transform: translate(-50%, -50%);
     z-index: -1;
 }
+
 h1 {
     color: white;
     font-size: 50px;
-    margin: 0 auto;
-    align-self: center;
     text-align: center;
     margin-top: 120px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
-h2 {
-    margin-top: 15px;
-
-}
+/* ---------- Profile Card ---------- */
 .profile-container {
     width: 400px;
-    height: 620px;
     border: solid 2px #ccc;
     border-radius: 10px;
     text-align: center;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-    margin-left: 40%;
-    margin-top: 20px;
+    margin: 40px auto;
+    background: #fff;
+    padding-bottom: 20px;
 }
 
 .profile-picture {
@@ -53,18 +58,20 @@ h2 {
     height: 200px;
     border-radius: 50%;
     border: 5px solid white;
-    margin: 0 auto;
+    margin: -100px auto 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
-    margin-left: 26%;
-    margin-top: -100px;
-      
+    transition: transform 0.3s ease;
 }
+
 .profile-picture:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease;
     background-image: url('../src/profile-hover.jpg');
+}
+
+h2 {
+    margin-top: 15px;
 }
 
 .Identity {
@@ -76,45 +83,129 @@ h2 {
     color: #666;
     margin-top: 15px;
     padding: 20px;
-    width:300px;
-    margin-left: 50px;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
     text-justify: inter-word;
 }
 
 .Interests {
-margin-bottom: 20px;
+    margin: 20px 0;
 }
+
 span {
     font-weight: bold;
     color: #333;
-    padding: 6px;
+    padding: 6px 10px;
     font-size: 16px;
     border: #333 solid 1px;
     border-radius: 20px;
-    margin: 0 5px;
+    margin: 5px;
+    display: inline-block;
 }
 
 .contact {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 16px;
     background-color: #666;
-    color:white;
+    color: white;
     border-radius: 20px;
     padding: 10px 20px;
+    border: none;
+    transition: all 0.3s ease;
 }
 
 .contact:hover {
     background-color: #333;
-    color: white;
     transform: scale(1.1);
-    transition: transform 0.3s ease;
     cursor: pointer;
-
 }
 
 span:hover {
     background-color: #333;
     color: white;
     cursor: pointer;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background: #333;
+    color: white;
+    font-size: 14px;
+}
+
+/* ================================ */
+/* 📱 Responsive Styles (<=768px)  */
+/* ================================ */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+        margin-top: 100px;
+    }
+
+    .profile-container {
+        width: 90%;
+        margin: 30px auto;
+        padding-bottom: 25px;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+        margin-top: -75px;
+    }
+
+    .bio {
+        font-size: 14px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    span {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    .contact {
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+/* 📱 Extra Small Phones (<=480px) */
+@media (max-width: 480px) {
+    .top-bg {
+        height: 220px;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-top: 70px;
+    }
+
+    .profile-picture {
+        width: 130px;
+        height: 130px;
+        margin-top: -65px;
+    }
+
+    .bio {
+        font-size: 13px;
+    }
+
+    span {
+        font-size: 13px;
+    }
+
+    .contact {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
