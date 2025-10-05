@@ -1,25 +1,43 @@
-
+/* ======================== */
+/* 🎯 Base (Desktop) Styles */
+/* ======================== */
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background: url('./Resources/mario-bg.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed only on desktop */
+    margin: 0;
+    padding: 0;
 }
 
+/* Game Title & Score */
+h1 {
+    margin-top: 30px;
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+/* Game Board */
 #board {
     width: 540px;
     height: 540px;
-    
-
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-
-    background:url('./Resources/soil.png');
-    background-size:cover;
+    background: url('./Resources/soil.png');
+    background-size: cover;
     border: 3px solid white;
     border-radius: 25px;
-
 }
 
 #board div {
@@ -32,7 +50,6 @@ body {
 #board div img {
     width: 100px;
     height: 100px;
-
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -40,6 +57,7 @@ body {
     -ms-user-select: none;
 }
 
+/* New Game Button */
 #newGame {
     margin-top: 15px;
     background-color: rgb(40, 131, 7);
@@ -47,30 +65,103 @@ body {
     height: 40px;
     border-radius: 25px;
     text-transform: uppercase;
-
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-#newGame:hover{
+
+#newGame:hover {
     background-color: #13db35;
     color: white;
-
-
 }
 
+/* Footer */
 .game-footer {
-    background-color: #222;         /* Dark background - change as needed */
-    color: #f2f2f2;                 /* Light text for contrast */
+    background-color: #222;
+    color: #f2f2f2;
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
     position: fixed;
-    margin-left: 200px;
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 80%;
     border-top: 2px solid #444;
     border-radius: 25px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     font-family: 'Segoe UI', sans-serif;
 }
 
+/* =============================== */
+/* 📱 Mobile Responsive (<=768px)  */
+/* =============================== */
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll; /* prevent zoom issues */
+        overflow-x: hidden; /* remove sideways scroll */
+        margin: 0;
+        padding: 0;
+    }
 
+    h1 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    #board {
+        width: 300px;
+        height: 300px;
+        border-width: 2px;
+        margin: 0 auto;
+    }
+
+    #board div {
+        width: 100px;
+        height: 100px;
+    }
+
+    #board div img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #newGame {
+        width: 160px;
+        height: 36px;
+        font-size: 14px;
+        margin: 15px auto 20px;
+        display: block;
+    }
+
+    /* Footer adjustments */
+    .game-footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        margin: 0;
+        font-size: 14px;
+        padding: 12px 0;
+        border-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    /* Ensure page ends with footer cleanly */
+    html, body {
+        height: 100%;
+        overflow-x: hidden;
+    }
+}
