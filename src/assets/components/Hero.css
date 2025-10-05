@@ -42,7 +42,6 @@
 }
 
 .home-header {
-        padding-top: 5rem; 
         text-align: center;
         font-size: 4rem;
         animation: shadowCycle 6s infinite linear;
@@ -75,5 +74,6 @@
   }
 
 }
+
 
 
