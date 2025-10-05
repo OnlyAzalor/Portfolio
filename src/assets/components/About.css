@@ -98,7 +98,27 @@ p{
 
 }
 
+    .about-head {
+        font-size: 1.5rem;
+        top: 3rem;
+    }
 
+
+    .about-cont {   
+        width: 250px;
+        height: 250px;
+        margin-left: 0px;
+    }
+    .about-text {
+        max-width: 90%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .about-logo {
+        font-size: 3rem;
+        top: 20%;
+    }
 
 
 }
