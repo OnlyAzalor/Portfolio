@@ -1,3 +1,6 @@
+/* ======================== */
+/* 🎯 Base (Desktop) Styles */
+/* ======================== */
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +9,14 @@
     font-weight: 500;
 }
 
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #f2f2f2;
-}
+
+/* Main container */
 .container {
     position: relative;
     width: 440px;
@@ -23,64 +26,43 @@ body {
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     overflow: hidden;
     padding: 20px;
-}
 
-.container {  
     display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "display display display display"
-    "ac ac modlus divd"
-    "num7 num8 num9 multi"
-    "num4 num5 num6 sub"
-    "num1 num2 num3 add"
-    "num0 num0 point equal";
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "display display display display"
+        "ac ac modlus divd"
+        "num7 num8 num9 multi"
+        "num4 num5 num6 sub"
+        "num1 num2 num3 add"
+        "num0 num0 point equal";
 }
 
+/* Grid areas */
 .display { grid-area: display; }
-
 .ac { grid-area: ac; }
-
 .modlus { grid-area: modlus; }
-
 .num7 { grid-area: num7; }
-
 .num8 { grid-area: num8; }
-
 .num9 { grid-area: num9; }
-
 .num4 { grid-area: num4; }
-
 .num5 { grid-area: num5; }
-
 .num6 { grid-area: num6; }
-
 .num1 { grid-area: num1; }
-
 .num2 { grid-area: num2; }
-
 .num3 { grid-area: num3; }
-
 .num0 { grid-area: num0; }
-
 .point { grid-area: point; }
-
 .divd { grid-area: divd; }
-
 .multi { grid-area: multi; }
-
 .sub { grid-area: sub; }
-
 .add { grid-area: add; }
-
 .equal { grid-area: equal; }
 
-
+/* Display */
 .screen {
-    position: relative;
     width: 100%;
     height: 100%;
     background: #6868686e;
@@ -93,6 +75,7 @@ body {
     border-radius: 10px;
 }
 
+/* Buttons */
 .allclear {
     background: #f44336;
     color: #fff;
@@ -121,11 +104,65 @@ body {
     transform: scale(0.95);
 }
 
-
 .allclear:hover {
     background: #961a1a;
 }
+
 .cal-keys:hover {
     background: #bdbdbd;
 }
 
+/* =============================== */
+/* 📱 Mobile Responsive (<=768px)  */
+/* =============================== */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        background: #eaeaea;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        padding: 15px;
+        border-radius: 12px;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 80px);
+        gap: 5px;
+    }
+
+    .screen {
+        font-size: 2.2rem;
+        padding: 15px;
+    }
+
+    .allclear, .cal-keys {
+        font-size: 1.6rem;
+        border-radius: 8px;
+    }
+
+    /* Keep bottom spacing neat */
+    html, body {
+        overflow-x: hidden;
+    }
+}
+
+/* 📱 Extra Small Phones (<=480px) */
+@media (max-width: 480px) {
+    .container {
+        max-width: 320px;
+        grid-template-rows: repeat(6, 70px);
+    }
+
+    .screen {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+
+    .allclear, .cal-keys {
+        font-size: 1.4rem;
+    }
+}
+}
