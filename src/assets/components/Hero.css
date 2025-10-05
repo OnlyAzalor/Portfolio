@@ -41,30 +41,38 @@
     
 }
 
-.glitch {
-    position: relative;
-    color: white;
-    font-size: 5rem;
-    animation: glitch-animation 1s infinite;
+.home-header {
+        padding-top: 80px; 
+        text-align: center;
+        font-size: 4rem;
+        animation: shadowCycle 6s infinite linear;
 }
-@keyframes glitch-animation {
-    0% {
-        text-shadow: 2px 0 red, -2px 0 cyan;
-    }
-    20% {
-        text-shadow: -2px 0 red, 2px 0 cyan;
-    }
-    40% {
-        text-shadow: 2px 0 red, -2px 0 cyan;
-    }
-    60% {
-        text-shadow: -2px 0 red, 2px 0 cyan;
-    }
-    80% {
-        text-shadow: 2px 0 red, -2px 0 cyan;
-    }
-    100% {
-        text-shadow: -2px 0 red, 2px 0 cyan;
-    }
+
+@keyframes shadowCycle {
+  0% {
+    text-shadow: 0 0 15px #ff7e5f, 0 0 30px #feb47b; /* Sunset Orange */
+    color: #ffecd2;
+  }
+  20% {
+    text-shadow: 0 0 15px #6dd5ed, 0 0 30px #2193b0; /* Sky Blue */
+    color: #e0f7fa;
+  }
+  40% {
+    text-shadow: 0 0 15px #56ab2f, 0 0 30px #a8e063; /* Forest Green */
+    color: #eaffea;
+  }
+  60% {
+    text-shadow: 0 0 15px #a18cd1, 0 0 30px #fbc2eb; /* Lavender & Pink */
+    color: #fef4ff;
+  }
+  80% {
+    text-shadow: 0 0 15px #f7971e, 0 0 30px #ffd200; /* Golden Hour */
+    color: #fffbe0;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff7e5f, 0 0 30px #feb47b; /* Back to Sunset Orange */
+    color: #ffecd2;
+  }
+
 }
 
