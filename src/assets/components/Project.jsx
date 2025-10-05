@@ -28,6 +28,7 @@ const ExampleComponent = () => {
             <a className="card" data-aos="fade-up" data-aos-delay="250" href="/External-Links/Lucky-7/Index.html" target='_blank'><img src="/External-Links/Thumbnails/Screenshot (95).png" alt="" className='Project-Thumb' /></a>
             <a className="card" data-aos="fade-up" data-aos-delay="250" href="/External-Links/Wack-Mole/index.html" target='_blank'><img src="/External-Links/Thumbnails/Screenshot (100).png" alt="" className='Project-Thumb' /></a>
         </div>
+        <h1 className='project-header' data-aos="fade-up">Non-Responsive</h1>
         <div className='project-row3'>
             <a className="card" data-aos="fade-up" data-aos-delay="350" href="/External-Links/Flappy-Bird/index.html" target='_blank'><img src="/External-Links/Thumbnails/Screenshot (91).png" alt="" className='Project-Thumb' /></a>
             <a className="card" data-aos="fade-up" data-aos-delay="350" href="/External-Links/Pac-Man/index.html" target='_blank'><img src="/External-Links/Thumbnails/Screenshot (96).png" alt="" className='Project-Thumb' /></a>
