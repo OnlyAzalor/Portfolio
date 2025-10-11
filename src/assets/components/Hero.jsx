@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Hero.css";
 
 function hero() {
   return (
@@ -10,3 +11,4 @@ function hero() {
 }
 
 export default hero
+
