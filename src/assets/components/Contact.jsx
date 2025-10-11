@@ -1,4 +1,5 @@
 import React from "react";
+import "./Contact.css";
 
 function Contact() {
   const handleSubmit = (e) => {
@@ -26,3 +27,4 @@ function Contact() {
 }
 
 export default Contact;
+
