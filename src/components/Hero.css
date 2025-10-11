@@ -1,0 +1,93 @@
+
+
+.hero-header {
+    font-size: 5rem;
+    text-align: center;
+    position: relative;
+    top: 20rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    color:aliceblue;
+    animation: hero-animation 1.5s ease-in-out infinite alternate;
+}
+
+#home {
+    /* background-color: rgba(48, 77, 109, 0.4); */
+    height: 100vh;
+}
+
+.hero-dis {
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    top: 22rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--primary);
+    text-shadow: 4px 4px 8px var(--secondary);
+    animation: hero-animation 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes hero-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+.home-header {
+        text-align: center;
+        font-size: 4rem;
+        animation: shadowCycle 6s infinite linear;
+}
+
+@keyframes shadowCycle {
+  0% {
+    text-shadow: 0 0 15px #ff7e5f, 0 0 30px #feb47b; /* Sunset Orange */
+    color: #ffecd2;
+  }
+  20% {
+    text-shadow: 0 0 15px #6dd5ed, 0 0 30px #2193b0; /* Sky Blue */
+    color: #e0f7fa;
+  }
+  40% {
+    text-shadow: 0 0 15px #56ab2f, 0 0 30px #a8e063; /* Forest Green */
+    color: #eaffea;
+  }
+  60% {
+    text-shadow: 0 0 15px #a18cd1, 0 0 30px #fbc2eb; /* Lavender & Pink */
+    color: #fef4ff;
+  }
+  80% {
+    text-shadow: 0 0 15px #f7971e, 0 0 30px #ffd200; /* Golden Hour */
+    color: #fffbe0;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff7e5f, 0 0 30px #feb47b; /* Back to Sunset Orange */
+    color: #ffecd2;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+
+.hero-header {
+
+    top: 10rem;
+}
+
+
+  .hero-dis {
+    top: 12rem;
+
+}
+
+}
