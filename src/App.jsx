@@ -1,13 +1,12 @@
-import React from 'react'
-import Nav from './assets/components/Nav'
-import './assets/components/Nav.css'
-import './App.css'
-import Hero from './assets/components/Hero'
-import About from './assets/components/About'
-import Project from './assets/components/Project'
-import Skills from './assets/components/Skills'
-import Contact from './assets/components/Contact'
-import Footer from './assets/components/Footer'
+import React from "react";
+import Nav from "./components/Nav";
+import "./App.css";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Project from "./components/Project";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
