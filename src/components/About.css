@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    padding-top: 40vh;
+    padding-top: 30vh;
 
 }
 .about-head {
@@ -119,6 +119,7 @@ p{
         font-size: 3rem;
         top: 20%;
     }
+
 
 
 }
