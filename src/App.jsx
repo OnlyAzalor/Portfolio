@@ -10,8 +10,9 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <>
       <Nav />
+      <Background />
       <div className='content'>
           <div id='home'>
             <Hero />
@@ -30,7 +31,7 @@ function App() {
           </div>
       </div>
       <Footer />
-    </div>
+    </>
   )
 }
 
