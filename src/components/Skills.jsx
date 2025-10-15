@@ -14,11 +14,10 @@ function Skills() {
       <ul className="skills-list2">
         <li>JAVASCRIPT</li>
         <li>REACT</li>
-        <li>TYPESCRIPT</li>
-        <li>SASS</li>
       </ul>
     </div>
   );
 }
 
 export default Skills;
+
