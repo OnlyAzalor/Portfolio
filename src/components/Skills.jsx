@@ -1,4 +1,3 @@
-import React from "react";
 import "./Skills.css";
 
 function Skills() {
@@ -14,10 +13,12 @@ function Skills() {
       <ul className="skills-list2">
         <li>JAVASCRIPT</li>
         <li>REACT</li>
+        <li>Express</li>
+        <li>MongoDB</li>
+        <li>NodeJS</li>
       </ul>
     </div>
   );
 }
 
 export default Skills;
-
