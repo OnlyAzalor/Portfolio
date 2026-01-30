@@ -13,6 +13,7 @@ const ExampleComponent = () => {
   }, []);
 
   return (
+    <div>
       <h1 className="project-header" data-aos="fade-up">
         Projects
       </h1>
@@ -186,4 +187,5 @@ const ExampleComponent = () => {
 };
 
 export default ExampleComponent;
+
 
