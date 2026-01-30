@@ -13,25 +13,6 @@ const ExampleComponent = () => {
   }, []);
 
   return (
-    <div>
-      <h1 className="project-header" data-aos="fade-up">
-        Full Stack Projects
-      </h1>
-      <div className="project-row1">
-        <a
-          className="card"
-          data-aos="fade-up"
-          data-aos-delay="150"
-          href="/External-Links/Glass-Site/index.html"
-          target="_blank"
-        >
-          <img
-            src="/External-Links/Thumbnails/Screenshot (93).png"
-            alt=""
-            className="Project-Thumb"
-          />
-        </a>
-      </div>
       <h1 className="project-header" data-aos="fade-up">
         Projects
       </h1>
@@ -205,3 +186,4 @@ const ExampleComponent = () => {
 };
 
 export default ExampleComponent;
+
