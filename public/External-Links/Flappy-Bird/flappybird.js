@@ -153,7 +153,7 @@ function update(currentTime) {
   context.fillText(score, 5, 45);
 
   if (gameOver) {
-    context.fillText("GAME OVER!, GIT GUD TRASH", 5, 90);
+    context.fillText("GAME OVER!, GIT GUD!", 5, 90);
   }
 }
 
@@ -235,3 +235,4 @@ const speedIncrease = () => {
 
 speedIncrease();
 console.log("Speed:", velocityX);
+
